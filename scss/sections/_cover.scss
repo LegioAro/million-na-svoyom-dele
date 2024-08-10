@@ -96,6 +96,10 @@
       font-weight: 800;
       text-transform: uppercase;
     }
+
+    br {
+      display: none;
+    }
   }
 
   &__timer {
@@ -355,6 +359,9 @@
     }
     &__desc {
       margin-bottom: 33px;
+      br {
+        display: block;
+      }
     }
     &__timer {
       margin-bottom: 33px;
