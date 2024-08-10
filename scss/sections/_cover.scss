@@ -134,17 +134,45 @@
     letter-spacing: 0%;
     text-align: center;
 
+    &::before {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
     &:nth-child(1) {
       top: 0;
       left: -54px;
+      &::before {
+        background-image: url(../img/cover/arrows/1.svg);
+        width: 143px;
+        height: 51px;
+        right: 33px;
+        top: calc(100% + 11px);
+      }
     }
     &:nth-child(2) {
       top: 145px;
       right: 17px;
+      &::before {
+        background-image: url(../img/cover/arrows/2.svg);
+        width: 119px;
+        height: 60px;
+        left: -19px;
+        top: calc(100% + 18px);
+      }
     }
     &:nth-child(3) {
       top: 296px;
       left: -54px;
+      &::before {
+        background-image: url(../img/cover/arrows/3.svg);
+        width: 163px;
+        height: 112px;
+        right: -54px;
+        top: -106px;
+      }
     }
   }
 
@@ -227,10 +255,20 @@
       &:nth-child(2) {
         top: 145px;
         right: 0px;
+        &::before {
+          left: 80px;
+          width: 100px;
+          height: 50px;
+        }
       }
       &:nth-child(3) {
         top: 196px;
         left: -50px;
+        &::before {
+          width: 120px;
+          top: -70px;
+          right: 0;
+        }
       }
     }
     &__dec {
@@ -253,6 +291,9 @@
     }
     &__img-text {
       font-size: 18px;
+      &::before {
+        display: none;
+      }
       &:nth-child(1) {
         top: -50px;
         left: 80px;
