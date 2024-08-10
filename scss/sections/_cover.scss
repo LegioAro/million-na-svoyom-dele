@@ -340,6 +340,9 @@
   .cover {
     margin-bottom: 80px;
     padding: 20px 0 80px;
+    &--tmpl-2 {
+      margin-bottom: 0;
+    }
     &__img-block {
       display: none;
     }
