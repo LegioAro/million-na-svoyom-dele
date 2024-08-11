@@ -98,7 +98,6 @@ if (document.documentElement.clientWidth <= 1200) {
   items.forEach((item) => mobBlock.append(item));
 }
 
-
 //Modal
 function isModal() {
   let modalBtns = document.querySelectorAll('.modal__btn-active');
@@ -135,3 +134,10 @@ function isModalClose() {
   }
 }
 isModalClose();
+
+//resize
+isResize('.who__info-img', '.who__info', '.who__mob', 850, 'first');
+
+window.addEventListener('resize', () => {
+  isResize('.who__info-img', '.who__info', '.who__mob', 850, 'first');
+});

@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .days {
     margin-bottom: 150px;
     &__wrapper {
@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .days {
     &__item-header {
       flex-direction: column;
@@ -142,7 +142,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .days {
     &__item-infos {
       flex-direction: column;
