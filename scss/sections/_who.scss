@@ -34,13 +34,9 @@
     }
   }
   &__info-img-title {
-    display: none;
     color: #fff;
-    text-align: center;
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 20px;
+    line-height: 100%;
 
     br {
       display: none;
@@ -55,7 +51,7 @@
 
   &__info-title {
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     line-height: 100%;
   }
 
@@ -257,10 +253,10 @@
     &__info-img {
       max-width: 320px;
       margin-right: 0;
-      margin: 0 auto 90px;
+      margin: 0 auto;
     }
     &__info-img-title {
-      display: flex;
+      text-align: center;
     }
     &__info-content {
     }
